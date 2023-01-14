@@ -152,3 +152,142 @@ header{
     color: var(--text-gray);
     margin-bottom: 1.5rem;
 }
+
+/* ====Experience-section===== */
+#about{
+    position: relative;
+}
+.experiences{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.experience-text{
+    width: 40%;
+}
+.experience-text .experience-title{
+    font-size: 2.8rem;
+    padding-left: 1.4rem;
+    color: var(--text-dark);
+    border-left: 5px solid var(--btn-yellow);
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+.experience-text .experience-details{
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+.experience-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+}
+.experience-group div{
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: .5rem;
+}
+.experience-group div h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: .6rem;
+}
+.experience-group div p{
+    color: var(--text-gray);
+}
+.experience-image{
+    width: 60%;
+}
+.experience-image img{
+    width: 100%;
+    height: 1059px;
+}
+.year{
+    height: 12rem;
+    width: 21rem;
+    text-align: center;
+    padding: 2.9rem;
+    border-radius: .5rem;
+    background: var(--btn-yellow);
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+}
+.year .exp-year{
+    font-size: 3.5rem;
+    color: var(--text-white);
+    font-weight: 700;
+}
+.year p{
+    color: var(--text-white);
+}
+
+/* ====facts-section===== */
+.facts-section{
+    padding-top: 3rem;
+}
+.facts-section .fact-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.4rem;
+}
+.facts-section .fact-sub-title{
+    color: var(--text-gray);
+    width: 50%;
+}
+.fact-card{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7rem;
+}
+.fact-card .card{
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid var(--btn-yellow);
+    background: var(--text-white);
+    cursor: pointer;
+    position: relative;
+}
+.fact-card .card::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.358);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.fact-card .card:hover::before{
+    animation: card 3s infinite;
+    
+}
+@keyframes card {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(135deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card .number{
+    font-size: 2.8rem;
+    color: var(--text-dark);
+    margin: .5rem 0;
+}
