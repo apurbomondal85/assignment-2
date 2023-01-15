@@ -355,6 +355,7 @@ header{
 }
 .contact-info form input::placeholder,.contact-info form textarea::placeholder{
     text-transform: capitalize;
+    color: var(--text-white);
 }
 .contact-info form textarea{
     height: 10rem;
